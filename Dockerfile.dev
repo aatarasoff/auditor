@@ -1,0 +1,8 @@
+FROM gliderlabs/alpine:3.1
+CMD ["/bin/auditor"]
+
+ENV GOPATH /go
+RUN apk-install go git mercurial
+COPY . /go/src/github.com/aatarasoff/auditor
+RUN cd /go/src/github.com/aatarasoff/auditor \
+	&& go get -v && go build -ldflags "-X main.Version dev" -o /bin/auditor
