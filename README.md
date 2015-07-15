@@ -1,5 +1,7 @@
 # Auditor
 
+[![Join the chat at https://gitter.im/aatarasoff/auditor](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aatarasoff/auditor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Audit logging bridge for Docker
 
 Auditor automatically logs start/stop events of services for Docker containers based on published ports and metadata from the container environment. Based on [Registrator](https://github.com/gliderlabs/registrator) and supports Elasticsearch and Logstash engine.
